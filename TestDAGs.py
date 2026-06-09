@@ -3,7 +3,7 @@ from airflow import DAG
 from airflow.providers.standard.operators.bash import BashOperator
 
 with DAG(
-	dag_id="k8s_executor_test"
+	dag_id="k8s_executor_test",
         start_date=datetime(2026, 6, 9),
         schedule=None,
         catchup=False,
